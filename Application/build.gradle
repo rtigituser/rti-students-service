@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.15.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'org.springframework.boot' version '2.3.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
 	id 'war'
 }
@@ -15,6 +15,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework:spring-core'
+	implementation 'org.springframework:spring-context'
+	implementation 'org.springframework:spring-beans'
+	implementation 'com.azure:azure-spring-data-cosmos:3.0.0-beta.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
